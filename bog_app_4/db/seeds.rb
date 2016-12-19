@@ -3,5 +3,6 @@
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+Creature.create({ name: 'Star Wars',  description: 'Lord of the Rings' })
+Creature.create({ name: 'Vlad',  description: 'Ukranian' })
 #   Character.create(name: 'Luke', movie: movies.first)
