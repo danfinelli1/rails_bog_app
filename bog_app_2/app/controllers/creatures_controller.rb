@@ -15,6 +15,14 @@ end
 def show
   @creature = Creature.find_by_id(creature_id)
 end
+def edit
+  @creature = Creature.find_by_id(creature_id)
+end
+def update
+  creature = Creature.find_by_id(creature_id)
+  creature.update_attributes(creature_params)
+  redirect_to creature_path(creature)
+end
 
 private
 def creature_id
