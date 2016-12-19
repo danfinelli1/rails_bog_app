@@ -12,6 +12,9 @@ def create
     redirect_to creatures_path(creature)
   end
 end
+def show
+  @creature = Creature.find_by_id(creature_id)
+end
 
 private
 def creature_id
