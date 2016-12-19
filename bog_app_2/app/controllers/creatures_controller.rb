@@ -8,8 +8,8 @@ def new
 end
 def create
   @creature = Creature.new(creature_params)
-  if creature.save
-    redirect_to creatures_path(creature)
+  if @creature.save
+    redirect_to creatures_path()
   end
 end
 def show
